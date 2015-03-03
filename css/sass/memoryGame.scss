@@ -1,0 +1,177 @@
+/*Ragland Graphix Sass Template*/
+/* This Sass/css template was designed by John M. Ragland, Ragland Graphix LLC, raglandgrphix.com, any intentional reproduction is strictly forbidden.  */
+//ruby input onedrive\memoryGame1\css>sass --watch sass/memoryGame.scss:memoryGame.css
+body{
+  background:url(../assets/pokerTable.jpg) center center fixed;        
+}   
+#memoryWrapper{ 
+ /* This is a relatively standard use of a wrapper in a responsive application. This centers all elements inside the wrapper*/
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  margin: 0px auto;
+  height: auto; 
+  margin:0px auto;
+  padding:0px;          
+}
+p{
+  display:inline;
+  color:black;
+}
+header{
+  width:100%;
+  height:auto;
+  text-align:center;
+  margin:0px;
+  padding:0px;
+  img{
+    margin-top:0;
+    padding:0;      
+  }
+}
+.card{
+  width:auto;
+  /*max-width:200px;
+  min-width:75px;*/
+  height:120px;
+  display:inline-block;
+  margin:0px;
+  padding:0px;
+  margin-right:10px;
+  margin-bottom:10px;
+  cursor: pointer;
+  border-radius: 7%/5%;
+  img{
+    margin:0 auto;
+    position:relative;
+    width:auto;
+    height:100%;
+    vertical-align:top;       
+    border-radius:7%/5%;
+    box-shadow:8px 8px 8px black; 
+  }       
+}
+.cardFront{
+  transition-duration:2s;
+  transform-style: preserve-3d;
+  transform: rotateY(180deg);
+  img{
+    transform: scaleX(-1);  
+  }
+}
+#menu{
+  width:100;
+  margin-right:25px;
+  text-align:right;
+  margin-top:25px;
+  p{
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+    display:inline;
+    width:49%;
+    &:nth-child(2){
+      right:0px;
+      color:red;
+      text-align:right;
+    }          
+  }
+}
+#statusBar{
+  width:98%;
+  height: 75px;
+  background:#d4a017;
+  border-radius:15px;
+  margin:0 auto;
+  padding:0;
+  box-shadow: inset 5px 5px 8px white, inset -5px -5px 8px black,5px 5px 10px black;
+}
+#score{
+  float:center;
+  display:inline-block;
+  width:120px;
+  height:30px;
+  background:white;
+  text-align:center;
+  color:black;
+  margin-right:35px;
+  margin-top: 12px;
+  padding:2px;
+  border-radius:6%/24%;
+  box-shadow: inset 4px 4px 10px black;
+  padding-top:15px;
+  span{
+    color:red;
+  }
+}
+#highScore{
+  float:right;
+  display:inline-block;
+  width:120px;
+  height:30px;
+  background:white;
+  text-align:center;
+  color:black;
+  margin-right:35px;
+  margin-top: 12px;
+  padding:2px;
+  padding-top:15px;
+  border-radius:6%/24%;
+  box-shadow: inset 4px 4px 10px black;
+  span{
+    color:red;
+  }
+}
+#deck{
+  cursor: pointer;
+}
+#properties{
+  position:inherit;
+  top:100px;
+  left:25%;
+  border-radius:5px;
+  display:inline-block;
+  background:url(../assets/goldBackground.jpg)no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width:50%;
+  min-height:200px;
+  height:auto;
+  z-index: 1;
+  visibility: hidden;
+  padding:2%;
+}
+      
+#optionHolder{
+  position:relative;
+  border:thin solid brown;
+  border-radius:5px;
+  width:100%;
+  p{
+    position: static;
+    font-style:italic;
+    text-align:right;
+    margin-right:12px;
+    cursor:pointer;
+  }
+  img{
+    width: 25%;
+    height:auto;
+    max-width:150px;
+    min-width: 50px;
+    cursor: pointer;
+    margin-right:5px;  
+  }
+}
+h1{
+  size: 2em;
+  color: red;
+}
+#cardsHolder{
+  text-align:center;
+  display:inline-block;
+  padding:0px;
+  padding-top:10px;
+  margin:0px;
+}
